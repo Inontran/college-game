@@ -1,0 +1,102 @@
+.button {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  cursor: pointer; }
+  .button.button_type_rating {
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 66px;
+    height: 61px;
+    background-image: url(img/btn-rating.dc8820a8d8b6ad4668f83ca3bfa176c6.png); }
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+	font-family: 'Cambria';
+	src: local('Cambria Italic'), local('Cambria-Italic'),
+    url(fonts/Cambria-Italic.woff2) format('woff2'),
+    url(fonts/Cambria-Italic.woff) format('woff'),
+		url(fonts/Cambria-Italic.eot?#iefix) format('embedded-opentype'),
+		url(fonts/Cambria-Italic.ttf) format('truetype');
+	font-weight: 400;
+	font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src: local('Cambria Bold'), local('Cambria-Bold'),
+    url(fonts/Cambria-Bold.woff2) format('woff2'),
+    url(fonts/Cambria-Bold.woff) format('woff'),
+		url(fonts/Cambria-Bold.eot?#iefix) format('embedded-opentype'),
+		url(fonts/Cambria-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src: local('Cambria'),
+    url(fonts/Cambria.woff2) format('woff2'),
+    url(fonts/Cambria.woff) format('woff'),
+		url(fonts/Cambria.eot?#iefix) format('embedded-opentype'),
+		url(fonts/Cambria.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cambria';
+	src: local('Cambria Bold Italic'), local('Cambria-BoldItalic'),
+    url(fonts/Cambria-BoldItalic.woff2) format('woff2'),
+    url(fonts/Cambria-BoldItalic.woff) format('woff'),
+		url(fonts/Cambria-BoldItalic.eot?#iefix) format('embedded-opentype'),
+		url(fonts/Cambria-BoldItalic.ttf) format('truetype');
+	font-weight: 700;
+	font-style: italic;
+  font-display: swap;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Cambria', serif;
+  font-weight: 400;
+  font-style: normal; }
+
+body {
+  background-color: lightslategray; }
+
+.main-window {
+  position: relative;
+  margin: auto;
+  width: 980px;
+  height: 630px;
+  background-image: url(img/background.d86e88ab0c5d16e801ce2f217b9acd6c.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .main-window__nav-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center; }
+  .main-window__nav-btn-wrapper {
+    padding: 0 4px; }
+
+
+/*# sourceMappingURL=index.css.map*/
