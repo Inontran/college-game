@@ -1,15 +1,59 @@
 .button {
   border: 0;
+  padding: 0;
   background: none;
   box-shadow: none;
   cursor: pointer; }
+  .button.button_type_chat {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 65px;
+    height: 60px;
+    background-image: url(img/btn-chat.447a52e01a00023dd3ff953afa5faefa.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f; }
+  .button.button_type_brown {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    overflow: hidden;
+    width: 202px;
+    height: 63px;
+    background-image: url(img/background-btn-brown.7b2e51b20ea76902efa9ab48863823b5.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f; }
+    .button.button_type_brown .button__text {
+      font-size: 33.333px;
+      color: #fcfaf9;
+      text-shadow: 0.5px 0.866px 3px rgba(33, 30, 31, 0.004);
+      text-transform: uppercase; }
+  .button.button_type_mail {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 64px;
+    height: 60px;
+    background-image: url(img/btn-mail.cb44b9b27728d31a12387f8b4ff65539.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f; }
   .button.button_type_rating {
     padding: 0;
     border-radius: 10px;
     overflow: hidden;
     width: 66px;
     height: 61px;
-    background-image: url(img/btn-rating.dc8820a8d8b6ad4668f83ca3bfa176c6.png); }
+    background-image: url(img/btn-rating.dc8820a8d8b6ad4668f83ca3bfa176c6.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
 
 .map {
   position: absolute;
@@ -17,6 +61,16 @@
   left: 0;
   width: 100%;
   height: 100%; }
+
+.carousel {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 546px;
+  height: 63px;
+  background-image: url(img/background-carousel.721c476aa3bcf55d46439491ae8025ce.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 @font-face {
 	font-family: 'Cambria';
@@ -94,9 +148,10 @@ body {
     left: 0;
     z-index: 10;
     display: flex;
-    align-items: center; }
-  .main-window__nav-btn-wrapper {
-    padding: 0 4px; }
+    align-items: center;
+    padding: 0 2px; }
+    .main-window__nav-bar-item {
+      padding: 0 2px; }
 
 
 /*# sourceMappingURL=index.css.map*/
