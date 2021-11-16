@@ -72,7 +72,7 @@ module.exports = {
   context: PATHS.src,
   mode: 'development',
   entry: {
-    'script': `${PATHS.src}/page/entry.js`
+    'index': `${PATHS.src}/page/entry.js`
   },
   output:{
     filename: '[name].js',
@@ -134,7 +134,16 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg|gif)$/i,
+        exclude: `${PATHS.src}/fonts/`,
         loaders: imagesLoaders,
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot|svg)$/i,
+        include: `${PATHS.src}/fonts/`,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]'
+        },
       },
       {
         test: /\.(scss|sass)$/i,
