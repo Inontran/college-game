@@ -20,3 +20,5 @@ package-lock.json
 dist
 .DS_Store
 stats.json
+
+description

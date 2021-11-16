@@ -1,0 +1,15 @@
+.button {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &.button_type_rating {
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 66px;
+    height: 61px;
+    background-image: url(../../images/btn-rating.png);
+  }
+}

@@ -72,7 +72,7 @@ module.exports = {
   context: PATHS.src,
   mode: 'development',
   entry: {
-    'script': `${PATHS.src}/scripts/entry.js`
+    'script': `${PATHS.src}/page/entry.js`
   },
   output:{
     filename: '[name].js',
@@ -100,7 +100,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: `${PATHS.src}/index.html`,
+      template: `${PATHS.src}/page/index.html`,
       chunks: 'index',
       alwaysWriteToDisk: true,
       hash: true,
