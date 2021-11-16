@@ -1,9 +1,58 @@
 .button {
   border: 0;
+  padding: 0;
   background: none;
   box-shadow: none;
   cursor: pointer;
 
+  &.button_type_chat {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 65px;
+    height: 60px;
+    background-image: url(../../images/btn-chat.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f;
+  }
+
+  &.button_type_brown {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    overflow: hidden;
+    width: 202px;
+    height: 63px;
+    background-image: url(../../images/background-btn-brown.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f;
+
+    .button__text {
+      font-size: 33.333px;
+      color: rgb(252, 250, 249);
+      text-shadow: 0.5px 0.866px 3px rgba(33, 30, 31, 0.004);
+      text-transform: uppercase;
+    }
+  }
+
+  &.button_type_mail {
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 64px;
+    height: 60px;
+    background-image: url(../../images/btn-mail.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 2px 0px #211e1f;
+  }
+  
   &.button_type_rating {
     padding: 0;
     border-radius: 10px;
@@ -11,5 +60,8 @@
     width: 66px;
     height: 61px;
     background-image: url(../../images/btn-rating.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
