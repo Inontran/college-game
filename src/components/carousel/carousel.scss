@@ -9,25 +9,31 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  &__stage-wrapper,
+  &__stage {
+    user-select: none;
+  }
+
   &__stage-wrapper {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+    transform: translate(-50%, 0);
+    overflow-x: auto;
+    scroll-behavior: smooth;
     width: calc(100% - 29px - 29px);
-    height: 100%;
   }
 
   &__stage {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5px 0;
+    padding: 5px 0 7px;
+    width: min-content;
   }
 
   &__item {
-    padding: 0 5px;
+    padding: 0 6px 0 5px;
   }
 
   &__nav {
