@@ -1,3 +1,5 @@
+@import '@/shared/variables.scss';
+
 .button {
   border: 0;
   padding: 0;
@@ -15,7 +17,7 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 1px 1px 2px 0px #211e1f;
+    box-shadow: 1px 1px 2px 0px $dark;
   }
 
   &.button_type_brown {
@@ -30,12 +32,12 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 1px 1px 2px 0px #211e1f;
+    box-shadow: 1px 1px 2px 0px $dark;
 
     .button__text {
       font-size: 33.333px;
-      color: rgb(252, 250, 249);
-      text-shadow: 0.5px 0.866px 3px rgba(33, 30, 31, 0.004);
+      color: $almost-white;
+      text-shadow: 0.5px 0.866px 3px $dark004;
       text-transform: uppercase;
     }
   }
@@ -50,7 +52,7 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 1px 1px 2px 0px #211e1f;
+    box-shadow: 1px 1px 2px 0px $dark;
   }
   
   &.button_type_rating {

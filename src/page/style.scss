@@ -1,4 +1,5 @@
 @import '@/fonts/Cambria/cambria.css';
+@import '@/shared/variables.scss';
 
 * {
   &,
@@ -12,6 +13,7 @@ html {
   font-family: 'Cambria', serif;
   font-weight: 400;
   font-style: normal;
+  color: $white;
 }
 
 body {
