@@ -64,4 +64,38 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &.button_with-plus {
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -6px;
+      z-index: 1;
+      width: 23px;
+      height: 22px;
+      background-image: url(../../images/squire-plus.png);
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &.button_type_contact {
+    position: relative;
+    padding: 0;
+    width: 50px;
+    height: 51px;
+    background-image: url(../../images/background-btn-contact.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .button__icon {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }

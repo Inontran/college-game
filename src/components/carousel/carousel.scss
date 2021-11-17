@@ -1,4 +1,5 @@
 .carousel {
+  position: relative;
   border-radius: 12px;
   overflow: hidden;
   width: 546px;
@@ -7,4 +8,59 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+
+  &__stage-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: calc(100% - 29px - 29px);
+    height: 100%;
+  }
+
+  &__stage {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px 0;
+  }
+
+  &__item {
+    padding: 0 5px;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  &__prev-btn,
+  &__next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    border: 0;
+    width: 16px;
+    height: 29px;
+    background-color: transparent;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__prev-btn {
+    left: 9px;
+    background-image: url(../../images/arrow-white-left.png);
+  }
+
+  &__next-btn {
+    right: 9px;
+    background-image: url(../../images/arrow-white-right.png);
+  }
 }
