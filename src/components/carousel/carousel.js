@@ -52,7 +52,6 @@ class Carousel {
     this._carouselContainer.append(this._stageWrapper);
 
     this._scrollStep = itemWrapper.clientWidth;
-    console.log(this._scrollStep);
   }
   
   _createNavBtns() {

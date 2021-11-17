@@ -1,0 +1,46 @@
+@import '@/shared/variables.scss';
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  &__wrapper {
+    position: relative;
+    width: 523px;
+    height: 455px;
+    border: 5px solid $brown;
+    border-radius: 17px;
+    background: radial-gradient(#ce9e6b, #9e6b35);
+  }
+
+  &__header {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+    height: 33px;
+    background-image: url(../../images/background-modal-header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 27px;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    z-index: 3;
+  }
+}
