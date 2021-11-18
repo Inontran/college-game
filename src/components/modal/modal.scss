@@ -54,6 +54,18 @@
     z-index: 3;
   }
 
+  &__body {
+    background-color: $brown31;
+    border-radius: 17px;
+    padding: 32px 31px;
+    margin: 90px 23px 30px;
+  }
+
+  &__table-wrapper {
+    min-height: 260px;
+    overflow-y: auto;
+  }
+
   &.modal_opened {
     top: 50%;
     opacity: 1;

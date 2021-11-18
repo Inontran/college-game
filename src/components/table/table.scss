@@ -1,0 +1,77 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+  &__header-row {
+    background-image: url(../../images/background-table-header.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% calc(100% - 6px);
+  }
+  
+  &__header-cell {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 5px calc(6px + 6px);
+
+    &_with-avatar {
+      padding: 0;
+      width: 30px;
+    }
+
+    &_with-place {
+      text-align: center;
+      width: 66px;
+    }
+
+    &_with-experience {
+      width: 77px;
+    }
+
+    &_with-name,
+    &_with-experience {
+      text-align: left;
+    }
+  }
+
+  &__body-row {
+    background-image: url(../../images/background-table-row.png);
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    background-size: 100% calc(100% - 6px);
+  }
+
+  &__body-cell {
+    padding: 4px 5px calc(4px + 4px);
+
+    &_with-place {
+      text-align: center;
+    }
+
+    &_with-avatar {
+      padding: 0 0 4px;
+    }
+
+    &_with-name,
+    &__with-experience {
+      text-align: left;
+    }
+  }
+
+  &__username {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+
+  &__avatar {
+    width: 30px;
+    height: 29px;
+    background-image: url(../../images/background-btn-contact.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

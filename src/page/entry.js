@@ -2,6 +2,7 @@ import '@/components/button/button';
 import '@/components/map/map';
 import Carousel from '@/components/carousel/carousel';
 import Modal from '@/components/modal/modal';
+import '@/components/table/table';
 
 import './style.scss';
 
