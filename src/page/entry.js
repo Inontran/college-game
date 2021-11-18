@@ -11,4 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const modalRating = document.querySelector('#rating-modal');
   const modal = new Modal(modalRating);
+
+  function handleBtnOpenRatingPointerdown() {
+    modal.show();
+  }
+
+  const btnsOpenRating = document.querySelectorAll('.js-main-window__btn-open-rating .js-button');
+  btnsOpenRating.forEach(btn => {
+    btn.addEventListener('pointerdown', handleBtnOpenRatingPointerdown);
+  });
 });

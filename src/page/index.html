@@ -42,29 +42,30 @@
 
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_chat" type="button"></button>
+        <button class="button js-button button_type_chat" type="button"></button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_brown" type="button">
+        <button class="button js-button button_type_brown" type="button">
           <span class="button__text">В универ</span>
         </button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_mail" type="button"></button>
+        <button class="button js-button button_type_mail" type="button"></button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_rating" type="button"></button>
+        <div class="main-window__btn-open-rating js-main-window__btn-open-rating">
+          <button class="button js-button button_type_rating" type="button"></button>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="modal js-modal" id="rating-modal">
-    <div class="modal__background"></div>
     <div class="modal__wrapper">
       <div class="modal__header">
         <p class="modal__title">Рейтинг игроков</p>
       </div>
-      <div class="modal__close-btn">
+      <div class="modal__close-btn js-modal__close-btn">
         <button class="button js-button button_type_close" type="button"></button>
       </div>
     </div>
