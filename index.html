@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>College Game</title>
-<link href="index.css?1701a340a3c2f368dc2e" rel="stylesheet"></head>
+<link href="index.css?3ceb6cf03a28029adcf0" rel="stylesheet"></head>
 <body>
   <div class="main-window">
     <div class="map">
@@ -14,23 +14,75 @@
 
     <div class="main-window__nav-bar">
       <div class="main-window__nav-bar-item">
-        <div class="carousel js-carousel"></div>
+        
+        <div class="carousel js-carousel">
+          <button class="button button_type_contact button_with-plus" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button">
+            <img src="img/avatar-example.3c9a43fd031ba06dd21f4fb5028a8be9.png" class="button__icon">
+          </button>
+          <button class="button button_type_contact" type="button"></button>
+          <button class="button button_type_contact" type="button"></button>
+          <button class="button button_type_contact" type="button"></button>
+          <button class="button button_type_contact" type="button"></button>
+        </div>
+
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_chat" type="button"></button>
+        <button class="button js-button button_type_chat" type="button"></button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_brown" type="button">
+        <button class="button js-button button_type_brown" type="button">
           <span class="button__text">В универ</span>
         </button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_mail" type="button"></button>
+        <button class="button js-button button_type_mail" type="button"></button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button button_type_rating" type="button"></button>
+        <div class="main-window__btn-open-rating js-main-window__btn-open-rating">
+          <button class="button js-button button_type_rating" type="button"></button>
+        </div>
       </div>
     </div>
   </div>
-<script src="index.js?1701a340a3c2f368dc2e"></script></body>
+
+  <div class="modal js-modal" id="rating-modal">
+    <div class="modal__wrapper">
+      <div class="modal__header">
+        <p class="modal__title">Рейтинг игроков</p>
+      </div>
+      <div class="modal__close-btn js-modal__close-btn">
+        <button class="button js-button button_type_close" type="button"></button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__table-wrapper">
+          <table class="table js-table">
+            <thead class="table__header">
+              <tr class="table__header-row">
+                <th class="table__header-cell table__header-cell_with-place" scope="col">Место</th>
+                <th class="table__header-cell table__header-cell_with-avatar" scope="col"></th>
+                <th class="table__header-cell table__header-cell_with-name" scope="col">Имя Фамилия</th>
+                <th class="table__header-cell table__header-cell_with-experience" scope="col">Опыт</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="index.js?3ceb6cf03a28029adcf0"></script></body>
 </html>
