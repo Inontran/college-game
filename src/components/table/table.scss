@@ -1,7 +1,16 @@
+@import '@/shared/variables.scss';
+
 .table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+
+  &__header {
+    background-color: $brown31;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
   
   &__header-row {
     background-image: url(../../images/background-table-header.png);
@@ -40,6 +49,18 @@
     background-position: center 1px;
     background-repeat: no-repeat;
     background-size: 100% calc(100% - 6px);
+
+    &:last-of-type {
+      background-size: 100% calc(100% - 2px);
+
+      .table__body-cell {
+        padding-bottom: 4px;
+  
+        &_with-avatar {
+          padding-bottom: 0;
+        }
+      }
+    }
   }
 
   &__body-cell {
@@ -64,14 +85,28 @@
     overflow: hidden;
     max-width: 100%;
     text-overflow: ellipsis;
+
+    &_friend {
+      color: lightgreen;
+    }
   }
 
-  &__avatar {
+  &__avatar-wrapper {
+    position: relative;
     width: 30px;
     height: 29px;
     background-image: url(../../images/background-btn-contact.png);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+
+  &__avatar {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
   }
 }
