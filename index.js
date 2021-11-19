@@ -421,6 +421,128 @@ var Modal = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./components/personage/personage.js":
+/*!*******************************************!*\
+  !*** ./components/personage/personage.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _personage_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./personage.scss */ "./components/personage/personage.scss");
+/* harmony import */ var _personage_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_personage_scss__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
+
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+var Personage = /*#__PURE__*/function (_EventTarget) {
+  _inherits(Personage, _EventTarget);
+
+  var _super = _createSuper(Personage);
+
+  function Personage(personageContainer) {
+    var _this;
+
+    _classCallCheck(this, Personage);
+
+    _this = _super.call(this);
+
+    _defineProperty(_assertThisInitialized(_this), "_personageContainer", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "_currentCoords", [444, 507]);
+
+    _defineProperty(_assertThisInitialized(_this), "_currentPoint", 1);
+
+    _defineProperty(_assertThisInitialized(_this), "_coordiantes", [[[420, 495], [402, 473], [385, 464], [368, 467], [350, 477]], [[336, 487], [320, 496], [301, 506], [277, 519]], [[263, 528], [250, 533], [240, 535], [229, 535], [216, 538], [204, 539], [189, 539]], [[174, 535], [160, 534], [147, 530], [135, 524], [126, 519], [110, 511]], [[91, 499], [84, 490], [84, 477], [95, 468], [104, 463], [117, 453], [123, 447]], [[115, 430], [113, 422], [118, 410], [124, 401], [134, 396], [142, 391]], [[154, 383], [161, 381], [167, 377], [174, 374], [181, 369], [188, 367], [193, 364], [201, 360], [214, 354]], [[230, 345], [236, 339], [239, 332], [239, 324], [232, 317], [223, 310], [214, 305], [204, 298], [196, 295], [188, 291], [176, 283]], [[162, 273], [148, 266], [136, 259], [128, 253], [121, 242], [127, 235], [138, 230]], [[158, 222], [163, 214], [158, 206], [153, 199], [154, 190], [157, 184], [169, 180], [181, 179], [192, 186], [201, 199]]]);
+
+    _this._personageContainer = personageContainer;
+
+    _this._init();
+
+    return _this;
+  }
+
+  _createClass(Personage, [{
+    key: "goNextPoint",
+    value: function goNextPoint() {
+      var _this2 = this;
+
+      if (!this._coordiantes[this._currentPoint - 1]) {
+        return;
+      }
+
+      this.dispatchEvent(new Event('start-moving'));
+      var numberCoords = 0;
+      var movingInterval = setInterval(function () {
+        var position = _this2._coordiantes[_this2._currentPoint - 1][numberCoords];
+
+        if (position) {
+          _this2._personageContainer.style.left = position[0] + 'px';
+          _this2._personageContainer.style.top = position[1] + 'px';
+          numberCoords += 1;
+        } else {
+          clearInterval(movingInterval);
+          _this2._currentPoint += 1;
+
+          _this2.dispatchEvent(new Event('stop-moving'));
+        }
+      }, 100);
+    }
+  }, {
+    key: "_init",
+    value: function _init() {
+      this._personageContainer.style.left = this._currentCoords[0] + 'px';
+      this._personageContainer.style.top = this._currentCoords[1] + 'px';
+    }
+  }]);
+
+  return Personage;
+}( /*#__PURE__*/_wrapNativeSuper(EventTarget));
+
+/* harmony default export */ __webpack_exports__["default"] = (Personage);
+
+/***/ }),
+
+/***/ "./components/personage/personage.scss":
+/*!*********************************************!*\
+  !*** ./components/personage/personage.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./components/table/table.js":
 /*!***********************************!*\
   !*** ./components/table/table.js ***!
@@ -474,7 +596,7 @@ var Table = /*#__PURE__*/function () {
         var user1Points = parseInt(user1.points, 10);
         var user2Points = parseInt(user2.points, 10);
         if (user2Points > user1Points) return 1;
-        if (user2Points == user1Points) return 0;
+        if (user2Points === user1Points) return 0;
         if (user2Points < user1Points) return -1;
       });
       var tableBodyContent = '';
@@ -628,9 +750,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/carousel/carousel */ "./components/carousel/carousel.js");
 /* harmony import */ var _components_modal_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/modal/modal */ "./components/modal/modal.js");
 /* harmony import */ var _components_table_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/table/table */ "./components/table/table.js");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data */ "./page/data.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./style.scss */ "./page/style.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_personage_personage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/personage/personage */ "./components/personage/personage.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data */ "./page/data.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.scss */ "./page/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -643,16 +767,25 @@ document.addEventListener('DOMContentLoaded', function () {
   var carosuel = new _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_2__["default"](carouselContainer);
   var modalContainer = document.querySelector('#rating-modal');
   var modal = new _components_modal_modal__WEBPACK_IMPORTED_MODULE_3__["default"](modalContainer);
-
-  function handleBtnOpenRatingPointerdown() {
-    modal.show();
-  }
-
   var btnOpenRating = document.querySelector('.js-main-window__btn-open-rating .js-button');
-  btnOpenRating.addEventListener('pointerdown', handleBtnOpenRatingPointerdown);
+  btnOpenRating.addEventListener('pointerdown', function () {
+    modal.show();
+  });
   var tableContainer = document.querySelector('.js-table');
   var table = new _components_table_table__WEBPACK_IMPORTED_MODULE_4__["default"](tableContainer);
-  table.fillTable(_data__WEBPACK_IMPORTED_MODULE_5__["default"]);
+  table.fillTable(_data__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  var personageContainer = document.querySelector('.js-personage');
+  var personage = new _components_personage_personage__WEBPACK_IMPORTED_MODULE_5__["default"](personageContainer);
+  var btnMovingPersonage = document.querySelector('.js-main-window__moving-btn .js-button');
+  btnMovingPersonage.addEventListener('pointerdown', function () {
+    personage.goNextPoint();
+  });
+  personage.addEventListener('start-moving', function () {
+    btnMovingPersonage.disabled = true;
+  });
+  personage.addEventListener('stop-moving', function () {
+    btnMovingPersonage.disabled = false;
+  });
 });
 
 /***/ }),

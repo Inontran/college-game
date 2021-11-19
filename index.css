@@ -284,6 +284,18 @@
     max-width: 100%;
     max-height: 100%; }
 
+.personage {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  width: 21px;
+  height: 69px;
+  background-image: url(img/girl.274d656ff9aa2c0651072df60d6d2b08.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  transition: top .1s linear, left .1s linear; }
+
 @font-face {
 	font-family: 'Cambria';
 	src: local('Cambria Italic'), local('Cambria-Italic'),
@@ -344,7 +356,7 @@ html {
 
 body {
   position: relative;
-  margin: auto;
+  margin: 0;
   width: 980px;
   height: 630px;
   overflow: hidden; }
