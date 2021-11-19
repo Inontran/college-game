@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./page/entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./page/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -736,9 +736,9 @@ var data = {
 
 /***/ }),
 
-/***/ "./page/entry.js":
+/***/ "./page/index.js":
 /*!***********************!*\
-  !*** ./page/entry.js ***!
+  !*** ./page/index.js ***!
   \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -752,8 +752,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_table_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/table/table */ "./components/table/table.js");
 /* harmony import */ var _components_personage_personage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/personage/personage */ "./components/personage/personage.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data */ "./page/data.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.scss */ "./page/style.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index.scss */ "./page/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -790,9 +790,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./page/style.scss":
+/***/ "./page/index.scss":
 /*!*************************!*\
-  !*** ./page/style.scss ***!
+  !*** ./page/index.scss ***!
   \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
