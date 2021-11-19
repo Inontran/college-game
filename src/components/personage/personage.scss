@@ -1,0 +1,15 @@
+.personage {
+  position: absolute;
+  // top: 507px;
+  // left: 444px;
+  transform: translate(-50%, -100%);
+  width: 21px;
+  height: 69px;
+  background-image: url(../../images/girl.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  transition: top .1s linear,
+              left .1s linear;
+}

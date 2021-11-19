@@ -10,9 +10,10 @@
   <div class="main-window">
     <div class="map">
       <img src="../images/map.png" class="map__image">
+      <div class="personage js-personage"></div>
     </div>
 
-    <div class="main-window__nav-bar">
+    <section class="main-window__nav-bar">
       <div class="main-window__nav-bar-item">
         
         <div class="carousel js-carousel">
@@ -45,9 +46,11 @@
         <button class="button js-button button_type_chat" type="button"></button>
       </div>
       <div class="main-window__nav-bar-item">
-        <button class="button js-button button_type_brown" type="button">
-          <span class="button__text">В универ</span>
-        </button>
+        <div class="main-window__moving-btn js-main-window__moving-btn">
+          <button class="button js-button button_type_brown" type="button">
+            <span class="button__text">В универ</span>
+          </button>
+        </div>
       </div>
       <div class="main-window__nav-bar-item">
         <button class="button js-button button_type_mail" type="button"></button>
@@ -58,7 +61,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="modal js-modal" id="rating-modal">
     <div class="modal__wrapper">

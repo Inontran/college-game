@@ -25,7 +25,7 @@ class Table {
       const user1Points = parseInt(user1.points, 10);
       const user2Points = parseInt(user2.points, 10);
       if (user2Points > user1Points) return 1;
-      if (user2Points == user1Points) return 0;
+      if (user2Points === user1Points) return 0;
       if (user2Points < user1Points) return -1;
     });
 
