@@ -72,7 +72,7 @@ module.exports = {
   context: PATHS.src,
   mode: 'development',
   entry: {
-    'index': `${PATHS.src}/page/entry.js`
+    'index': `${PATHS.src}/page/index.js`
   },
   output:{
     filename: '[name].js',

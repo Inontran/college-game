@@ -6,7 +6,7 @@ import Table from '@/components/table/table';
 import Personage from '@/components/personage/personage';
 
 import data from './data';
-import './style.scss';
+import './index.scss';
 
 document.addEventListener('DOMContentLoaded', function() {
   const carouselContainer = document.querySelector('.js-carousel');
